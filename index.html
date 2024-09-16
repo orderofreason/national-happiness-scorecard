@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Happiness Scorecard</title>
+    
+    <!-- Material Design Lite CSS -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    
+    <!-- Material Design Lite JavaScript -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    
+    <!-- Link to your custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Material Design Layout -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <!-- Header -->
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Site title with link to homepage -->
+                <span class="mdl-layout-title"><a href="index.html" class="site-title">National Happiness Scorecard</a></span>
+                <!-- Spacer to align search to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Search field -->
+                <div class="search-container">
+                    <input type="text" id="country-search" placeholder="Find Country..." class="search-input">
+                    <div id="search-results" class="search-results"></div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Main Content -->
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Opening statement section -->
+                <div class="section-card">
+                    <h2 class="section-header">About This Website</h2>
+                    <p>
+                        This website presents an overview of global happiness based on data collected by the 
+                        <a href="https://worldhappiness.report/" target="_blank">World Happiness Report</a>. 
+                        The happiness score is a measure of the subjective well-being of people across various countries. 
+                        It is based on factors like GDP per capita, social support, healthy life expectancy, freedom to make life choices, generosity, and perceptions of corruption.
+                    </p>
+                    <p>
+                        We have compiled this data to provide insights into how different countries rank in terms of overall happiness and well-being.
+                        A special acknowledgment to the team at the World Happiness Report for their incredible work in collecting and analyzing this data. 
+                        Visit their website to learn more about their research and findings.
+                    </p>
+                </div>
+                <!-- Cards will be dynamically injected here by JavaScript -->
+            </div>
+        </main>
+    </div>
+    
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

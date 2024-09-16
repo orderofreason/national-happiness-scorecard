@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+    <link rel="stylesheet" href="style.css"> <!-- Your stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> <!-- Leaflet CSS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> <!-- Leaflet JS -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> <!-- ApexCharts for data visualizations -->
+</head>
+<body>
+    <!-- Material Design Layout -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <!-- Header -->
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Site title with link to homepage -->
+                <span class="mdl-layout-title"><a href="index.html" class="site-title">National Happiness Scorecard</a></span>
+                <!-- Spacer to align search to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Search field -->
+                <div class="search-container">
+                    <input type="text" id="country-search" placeholder="Find Country..." class="search-input">
+                    <div id="search-results" class="search-results"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Country Overview Section -->
+                <section id="country-overview"></section>
+
+                <!-- Current Year Data Section -->
+                <section id="current-year-data"></section>
+
+                <!-- Charts Section -->
+                <section id="charts-container"></section>
+            </div>
+        </main>
+    </div>
+
+    <script src="country.js"></script> <!-- Your JavaScript file -->
+</body>
+</html>
